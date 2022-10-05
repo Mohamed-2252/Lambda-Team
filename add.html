@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>add new</title>
+  <script src="https://kit.fontawesome.com/c8e372366f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style_new.css">
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="vid.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <div class="form" style="height:600px">
+    <div class="animate">
+      <h1 class="jt --debug" style="color: rgb(63, 160, 63);">
+        <span class="jt__row">
+          <span class="jt__text">lambda</span>
+        </span>
+        <span class="jt__row jt__row--sibling" aria-hidden="true">
+          <span class="jt__text">lambda</span>
+        </span>
+        <span class="jt__row jt__row--sibling" aria-hidden="true">
+          <span class="jt__text">lambda</span>
+        </span>
+        <span class="jt__row jt__row--sibling" aria-hidden="true">
+          <span class="jt__text">lambda</span>
+        </span>
+      </h1>
+    </div>
+    <div class="subtitle">Add new certificate!</div>
+    <form action="add.php" method="post" enctype="multipart/form-data">
+      <div class="input-container ic1">
+        <input id="code" class="input" type="text" placeholder=" " name="code"/>
+        <div class="cut"></div>
+        <label for="code" class="placeholder">code</label>
+      </div>
+      <br>
+      <div class="input-container ic2">
+        <input id="name" class="input" type="text" placeholder=" " name="name"/>
+        <div class="cut"></div>
+        <label for="name" class="placeholder">name</label>
+      </div>
+      <br>
+      <div class="divy">
+        <label for="inputTag">
+          upload photo <br />
+          <i class="fa fa-2x fa-camera"></i>
+          <input id="inputTag" type="file" required name="image"/>
+          <br />
+          <span id="imageName"></span>
+        </label>
+      </div>
+      <button type="text" class="submit">submit</button>
+      <p style="color:white;font-weight:bold;">IMAGE MUST BE .PNG</p>
+  </div>
+  </form>
+</body>
+
+</html>
